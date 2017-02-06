@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 #######################
 import data
+import noclosecmd
 #######################
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 #######################
+
 usinp = (raw_input('-> '))#ввод имени, открываемого файла
 print "user input: ", type(usinp)
 len_usinp = len(str(usinp))
@@ -72,3 +74,5 @@ plt.figure(1).savefig(usinp_title + 'e' + '.png')
 plt.figure(1).savefig(usinp_title + 'e' + '.pdf')
 plt.show()
 """
+
+noclosecmd.noclosecmd
