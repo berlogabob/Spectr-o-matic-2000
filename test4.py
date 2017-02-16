@@ -20,12 +20,12 @@ plt.plot(xvals, temps)
 
 # and add the scatter points for the peak values
 
+#plt.axvline(linewidth=0.5, color='r')
+plt.axvline(x=.5, ymin=0.25, ymax=0.75)
 
-
-
-xcoords = [0.22058956, 0.33088437, 2.20589566]
-for xc in xcoords:
-    plt.axvline(x=xc)
+#xcoords = [0.22058956, 0.33088437, 2.20589566]
+#for xc in xcoords:
+#    plt.axvline(x=xc)
 
 
 plt.scatter(peak_xvals, peak_temps)
